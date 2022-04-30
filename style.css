@@ -15,10 +15,18 @@ html {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.85);
+  height: 70px;
 }
 
-.container-fluid {
-  padding: 0px 50px !important;
+.nav-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.nav-action-items {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .mtn-logo {
@@ -30,7 +38,7 @@ html {
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
 }
 
 .navbar-brand {
@@ -43,7 +51,7 @@ html {
   border-radius: 30px !important;
   text-align: center;
   border: 1px solid #fff !important;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 600;
   line-height: 17px;
 }
@@ -56,7 +64,8 @@ html {
   background-color: black !important;
   color: white !important;
   border-radius: 30px !important;
-  font-size: 14px;
+  font-size: 14px !important;
+  padding: 5px 12px !important;
   font-weight: 600;
   line-height: 17px;
   border: 2px solid #fff !important;
@@ -140,7 +149,7 @@ span {
   font-weight: 700;
 }
 
-.pricing p {
+.sum-text {
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
@@ -158,6 +167,10 @@ span {
   padding: 50px 25px;
 }
 
+.pricing-cards {
+    display: flex;
+    flex-direction: column;
+}
 .dstvlogo {
   width: 60px;
 }
@@ -170,6 +183,7 @@ span {
   font-size: 19px;
   font-weight: 400;
   line-height: 60px;
+  width: max-content !important;
 }
 
 .pricing1 .btn-learn {
@@ -262,11 +276,20 @@ footer span {
   }
 }
 @media (min-width: 992px) {
+    .logo {
+        width: 100px;
+      }
+      
   .logo8 {
     padding: 8px;
     margin: 0 10px;
     height: 50px;
   }
+
+  .container-fluid {
+    padding: 0px 50px !important;
+  }
+  
 
   .logo13 {
     padding: 8px;

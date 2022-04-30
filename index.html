@@ -15,14 +15,18 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg align-items-center justify-">
+    <nav class="navbar fixed-top navbar-expand-lg align-items-center">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="Showmax_logo.svg" alt="">
-            </a>
-            <div class="button">
-                <div class=" btn btn-signup me-2 d-none d-md-inline-block d-lg-inline-block btn-radius">Sign up</div>
-                <div class=" btn btn-signin">Sign in</div>
+            <div class="nav-wrapper">
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="Showmax_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="button nav-action-items">
+                    <div class=" btn btn-signup me-2 d-none d-md-inline-block d-lg-inline-block btn-radius">Sign up</div>
+                    <div class=" btn btn-signin">Sign in</div>
+                </div>
             </div>
         </div>
     </nav>
@@ -47,7 +51,9 @@
                     </div>
                 </div>
                 <div class="class col-lg-8">
-                    <img class="img-fluid banner" src="/hero_slash_08042022.png" alt="heros-img">
+                    <img class="img-fluid banner d-none d-md-block d-lg-block" src="/hero_slash_08042022.png" alt="heros-img">
+                    <img class="img-fluid banner d-md-none d-lg-none " src="/hero_slash_mobile_08042022.png" alt="heros-img">
+
                 </div>
 
             </div>
@@ -56,7 +62,7 @@
 
 
     <section>
-        <div class="logo-section d-flex align-items-center justify-content-center">
+        <div class="logo-section d-flex align-items-center">
 
             <img class="logos" src="https://showmax.akamaized.net/e/welcome_pages/welcome_2020/brands/showmax.png"
                 alt="showmax logo">
@@ -91,28 +97,28 @@
     <section>
         <div class=" pricing">
             <div class="row text-center pricing-list ">
-                <div class="col-lg-4 col-md-4 pricing1">
+                <div class="col-lg-4 col-md-4 pricing1 pricing-cards">
                     <h2>Showmax</h2>
                     <p>Stream or download series, movies, Showmax Originals & kids' shows</p>
                     <p class="price">From <span>₦1200</span></p>
-                    <div class="btn btn-learn">Learn more</div>
+                    <div class="btn btn-learn mt-auto mx-auto">Learn more</div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 pricing2">
+                <div class="col-lg-4 col-md-4 pricing2 pricing-cards">
                     <h2 class="sub-text">Showmax Pro</h2>
                     <p class="sum-text">Stream or download series, movies, kids' shows, live sport from Supersport, news
                         & more
                     </p>
                     <p class="price2">From <span>₦3200</span></p>
-                    <div class="btn btn-learn">Learn more</div>
+                    <div class="btn btn-learn mt-auto mx-auto">Learn more</div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 pricing3">
+                <div class="col-lg-4 col-md-4 pricing3 pricing-cards">
                     <h2 class="sub-text2">Add Showmax to your bill</h2>
                     <p class="sum-text">Get even more entertainment & discounts with the convenience of a single
                         bill.</p>
                     <p>Find out about our deals for DStv subscribers</p>
-                    <div class="btn btn-learn ">
+                    <div class="btn btn-learn mt-auto mx-auto">
                         <div class="d-flex justify-content-center align-items-center">
                             <img class="dstvlogo"
                                 src="https://showmax.akamaized.net/e/welcome_pages/img/icons/payment/dstv.svg"
