@@ -1,170 +1,346 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
-    font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-body, html{
-    background: #000;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+body,
+html {
+  background: #000;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.navbar{
-    background-color: rgba(0,0,0,.85);
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
-.container-fluid{
-    padding: 0px 50px !important;
+.container-fluid {
+  padding: 0px 50px !important;
 }
 
-.mtn-logo{
-    width: 50px;
+.mtn-logo {
+  width: 80px;
 }
 
-.banner{
-    padding-top: 60px;
+.banner {
+  padding-top: 60px;
 }
 
-.logo{
-    width: 150px;
+.logo {
+  width: 150px;
 }
 
-.navbar-brand{
+.navbar-brand {
+  display: flex;
+}
+
+.btn-signup {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px !important;
+  text-align: center;
+  border: 1px solid #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.btn-signup:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.btn-signin {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 30px !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  border: 2px solid #fff !important;
+}
+
+.header-text h2 {
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 37px;
+}
+
+.header-text p {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+span {
+  color: #e83d8e !important;
+  font-weight: 900;
+}
+
+
+.btn-signin:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.btn-learn-more {
+  background-color: #fff !important;
+  color: #000 !important;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 20%) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 30px !important;
+  padding: 10px 30px !important;
+  width: 250px;
+}
+
+.logo-section {
+  flex-shrink: 0;
+  background-color: #000;
+  overflow: auto;
+}
+
+.logo-section::-webkit-scrollbar {
+  display: none;
+}
+
+.logo-section {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.logo8 {
+  padding: 8px;
+  height: 40px;
+}
+
+.logo13 {
+  padding: 8px;
+  height: 30px;
+}
+
+.logos {
+  padding: 10px;
+  height: 50px;
+}
+
+.pricing,
+.device,
+#first-content {
+  color: #fff;
+  background: linear-gradient(180deg, #1e1d28, #0b0b0e 50.03%);
+}
+
+.pricing h2,
+.device h2,
+.faq-header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pricing p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.pricing2 {
+  border-top: 3px solid #00b7dd;
+  padding: 50px 25px;
+}
+.pricing1 {
+  border-top: 3px solid #e83d8e;
+  padding: 50px 25px;
+}
+.pricing3 {
+  border-top: 3px solid #127daf;
+  padding: 50px 25px;
+}
+
+.dstvlogo {
+  width: 60px;
+}
+
+.btn-learn {
+  padding: 10px 30px !important;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 20%) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 30px !important;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.pricing1 .btn-learn {
+  background-color: #e83d8e !important;
+  color: #fff !important;
+}
+
+.pricing2 .btn-learn {
+  background-color: #00b7dd !important;
+  color: #fff !important;
+}
+
+.pricing3 .btn-learn {
+  background-color: #127daf !important;
+  color: #fff !important;
+}
+
+.pricing2 span {
+  color: #00b7dd !important;
+}
+
+.accordion-item {
+  padding: 1.625rem 2.8rem 1.625rem 2rem;
+}
+
+.partner-wrapper {
+  padding: 0px 150px !important;
+}
+
+.device {
+  padding-top: 50px;
+}
+
+.device p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.partners,
+.device,
+#first-content {
+  text-align: center;
+}
+
+.partners-text h2 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.partners-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.partners {
+  padding: 30px 0;
+}
+
+.payment-logo {
+  max-width: 50%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 29px;
+  margin: 0.5em 1em;
+}
+
+footer span {
+  margin: 0.5em 1em;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 29px;
+  opacity: 0.5;
+}
+
+.footer-link {
+  flex-direction: column;
+}
+
+@media (max-width: 992px) {
+  #first-content .row {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-.btn-radius{
-    border-radius: 30px;
-}
+    flex-direction: column-reverse;
+  }
 
-.btn-primary{
-    background-color: white !important;
-    color: black !important;
-    border-radius: 30px !important;
-    text-align: center;
-    border: 1px solid #fff;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
+  .header-text {
+    margin-bottom: 70px;
+  }
 }
-
-.btn-primary:hover{
-    background-color: #000 !important;
-    color: #fff !important;
-}
-.btn-secondary{
-    background-color: black !important;
-    color: white !important;
-    border-radius: 30px !important;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    border: 2px solid #fff;
-
-
-}
-
-.btn-secondary:hover{
-    background-color: #fff !important;
-    color: #000 !important;
-}
-
-.logo-section{
-    flex-shrink: 0;
-    background-color: #000;
-    overflow: auto;
-    box-sizing: border-box;
-}
-
-.logo8{
+@media (min-width: 992px) {
+  .logo8 {
     padding: 8px;
     margin: 0 10px;
     height: 50px;
-}
+  }
 
-.logo13{
+  .logo13 {
     padding: 8px;
     margin: 0 10px;
     height: 50px;
-}
+  }
 
-.logos{
+  .logos {
     padding: 10px;
     margin: 0 10px;
     height: 50px;
-}
+  }
 
-.pricing, .device, #first-content{
- color: #fff;
- background: linear-gradient(180deg,#1e1d28,#0b0b0e 50.03%);
-}
+  .partners,
+  .payment {
+    padding: 0 50px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.pricing2{
-    border-top: 3px solid #00b7dd;
-    padding: 50px 25px;
+  .partners-text {
+    width: 50%;
+    padding-right: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
+  .device,
+  #first-content {
+    text-align: left !important;
+  }
 
-}
-.pricing1{
-    border-top: 3px solid #e83d8e;
-    padding: 50px 25px;
+  .device-text {
+    padding-top: 30px !important;
+  }
+  .order-items {
+    display: flex;
+    flex-direction: column;
+  }
 
-}
-.pricing3{
-    border-top: 3px solid #127daf;
-    padding: 50px 25px;
+  .order-items .any-device {
+    order: 1;
+  }
 
-}
+  .order-items .download {
+    order: 2;
+  }
 
-.dstvlogo{
-    width: 50px;
-}
+  .order-items .data {
+    order: 4;
+  }
 
+  .order-items .payment {
+    order: 3;
+  }
 
-.device{
-    padding-top: 50px;
-}
+  .download .row,
+  .data .row {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-.partners, .device, #first-content{
+  .footer-link {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
     text-align: center;
-}
-
-.partners{
-    padding: 30px 0;
-}
-
-.payment-logo{
-    max-width: 50%;
-}
-footer a {
-    text-decoration: none;
-    color: #fff;
-}
-
-@media (min-width:992px) {
-    .partners, .payment{
-        padding: 0 50px;
-        display: flex;
-        text-align: left;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .device, #first-content{
-        text-align: left !important;
-
-    }
-
-    .device-text{
-        padding-top: 30px !important;
-    }
-
-    footer a {
-        font-size: 24px;
-    }    
-    
+  }
 }
